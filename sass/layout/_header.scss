@@ -1,0 +1,92 @@
+#header {
+    .logo {
+        max-width: pxTorem(150);
+        margin-inline: auto;
+        padding-block: pxTorem(32) pxTorem(48);
+        @include mqDown(small) {
+            max-width: pxTorem(100);
+            padding-block: pxTorem(16) pxTorem(16);
+        }
+    }
+    .nav-list {
+        padding-bottom: pxTorem(30);
+        .nav-items {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            @include mqDown(medium) {
+                gap: 1rem;
+            }
+            li {
+                list-style-type: none;
+                a {
+                    display: inline-block;
+                    text-decoration: none;
+                    color: var(--clr-primary-600);
+                    font-size: var(--fs-500);
+                    font-weight: var(--fw-500);
+                    text-transform: capitalize;
+                    transition: color 0.25s linear;
+                    &:hover {
+                        color: var(--clr-primary-500);
+                    }
+                    @include mqDown(medium) {
+                        font-size: var(--fs-400);
+                    }
+                }
+            }
+        }
+    }
+    .availability {
+        padding-block: 2rem;
+        form {
+            --gap: #{pxTorem(14)};
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: 4fr 4fr 1fr;
+            justify-content: center;
+            align-items: center;
+            gap: var(--gap);
+            @include mqDown(medium) {
+                grid-auto-flow: row;
+                grid-auto-rows: repeat(3fr, 3);
+            }
+            input {
+                outline: none;
+                padding: 0.5em 1em 0.5em 1em;
+                border-radius: 0.5em;
+                border: none;
+                &:focus {
+                    outline: 2px solid var(--clr-primary-400);
+                }
+            }
+            input[type="date"]::before {
+                content: attr(placeholder);
+                width: 100%;
+                color: var(--clr-neutral-600);
+            }
+            input[type="date"]:focus::before {
+                content: "";
+                width: 0%;
+            }
+            .chk-in-out {
+                display: grid;
+                grid-auto-flow: column;
+                grid-auto-columns: 1fr 1fr;
+                justify-content: center;
+                align-items: center;
+                gap: var(--gap);
+            }
+            input[type="submit"] {
+                background-color: var(--clr-primary-500);
+                color: var(--clr-neutral-100);
+                transition: background-color 0.25s linear;
+                cursor: pointer;
+                &:hover {
+                    background-color: var(--clr-primary-400);
+                }
+            }
+        }
+    }
+}

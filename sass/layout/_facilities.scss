@@ -1,0 +1,44 @@
+#facilities {
+    --padding: 2rem;
+    @include mqDown(small) {
+        --padding: 1rem;
+    }
+    margin-block: var(--padding);
+    .container {
+        margin-top: -8.125rem;
+        padding: var(--padding);
+        border-radius: 5px;
+        @include mqDown(small) {
+            margin-top: -6.25rem;
+        }
+        h2 {
+            text-align: center;
+        }
+        .facilities {
+            padding-top: var(--padding);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            @media (max-width: 22.5rem) {
+                justify-content: center;
+            }
+            .facility {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 0.5rem;
+                img {
+                    width: 3.75rem;
+                    height: 3.75rem;
+                    @include mqDown(small) {
+                        width: 2rem;
+                        height: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}

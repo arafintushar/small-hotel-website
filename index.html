@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Simple hotel website</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header id="header">
+            <div class="container">
+                <div class="logo"><img src="./img/logo.png" alt="logo" /></div>
+                <nav class="nav-list">
+                    <ul class="nav-items">
+                        <li><a href="#">Our Hotel</a></li>
+                        <li><a href="#">rooms & rates</a></li>
+                        <li><a href="#">facilities</a></li>
+                        <li><a href="#">contact us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="availability | bg-neutral-800 txt-neutral-100">
+                <div class="container">
+                    <form action="#">
+                        <input
+                            type="search"
+                            name="search"
+                            id="search"
+                            placeholder="Select a City"
+                        />
+                        <div class="chk-in-out">
+                            <input
+                                type="date"
+                                name="chk-in"
+                                id="chk-in"
+                                placeholder="Check in"
+                            />
+                            <input
+                                type="date"
+                                name="chk-out"
+                                id="chk-out"
+                                placeholder="Check out"
+                            />
+                        </div>
+                        <input type="submit" value="check availability" />
+                    </form>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="hero">
+                <div class="container txt-neutral-100">
+                    <h1 class="fs-primary-heading fw-bold">
+                        Welcome to bone hotel
+                    </h1>
+                    <p class="fs-500">
+                        good people. good thinking. good feeling.
+                    </p>
+                    <button class="btn">Explore</button>
+                </div>
+            </section>
+
+            <section id="facilities">
+                <div class="container bg-neutral-100">
+                    <h2 class="fs-secondary-heading fw-bold txt-primary-600">
+                        Facilities
+                    </h2>
+                    <div class="facilities txt-primary-400">
+                        <div class="facility">
+                            <img src="img/kitchen.png" alt="kitchen" />
+                            <p>kitchen</p>
+                        </div>
+                        <div class="facility">
+                            <img src="img/swim.png" alt="pool" />
+                            <p>pool</p>
+                        </div>
+                        <div class="facility">
+                            <img src="img/wifi.png" alt="wifi" />
+                            <p>wifi</p>
+                        </div>
+                        <div class="facility">
+                            <img src="img/gym.png" alt="gym" />
+                            <p>gym</p>
+                        </div>
+                        <div class="facility">
+                            <img src="img/taxi.png" alt="taxi" />
+                            <p>taxi</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="rates">
+                <div class="container">
+                    <h2 class="txt-primary-600 fw-regular fs-secondary-heading">
+                        Rooms & Rates
+                    </h2>
+                    <div class="rooms">
+                        <div
+                            class="room"
+                            style="--bg-img: url('../img/hotel-room-1.jpg')"
+                        >
+                            <div class="room-details">
+                                <h2 class="txt-neutral-100 fw-regular">
+                                    Standard Twin Room
+                                </h2>
+                                <button class="btn">Check Rates</button>
+                            </div>
+                        </div>
+                        <div
+                            class="room"
+                            style="--bg-img: url('../img/hotel-room-2.jpg')"
+                        >
+                            <div class="room-details">
+                                <h2 class="txt-neutral-100 fw-regular">
+                                    Standard Room
+                                </h2>
+                                <button class="btn">Check Rates</button>
+                            </div>
+                        </div>
+                        <div
+                            class="room"
+                            style="--bg-img: url('../img/hotel-room-3.jpg')"
+                        >
+                            <div class="room-details">
+                                <h2 class="txt-neutral-100 fw-regular">
+                                    Standard View Room
+                                </h2>
+                                <button class="btn">Check Rates</button>
+                            </div>
+                        </div>
+                        <div
+                            class="room"
+                            style="--bg-img: url('../img/hotel-room-4.jpg')"
+                        >
+                            <div class="room-details">
+                                <h2 class="txt-neutral-100 fw-regular">
+                                    Deluxe Room
+                                </h2>
+                                <button class="btn">Check Rates</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="book">
+                <div class="container">
+                    <h2 class="fs-secondary-heading fw-bold txt-primary-600">
+                        Get a room already!
+                    </h2>
+                    <button class="btn">Book now</button>
+                </div>
+            </section>
+        </main>
+
+        <footer id="footer" class="bg-neutral-800 txt-neutral-100">
+            <div class="container">
+                <div class="address">
+                    <div class="logo">
+                        <img src="img/logo-white.png" alt="logo" />
+                    </div>
+                    <div class="details fs-200">
+                        <p>Bon Hotels Head Office</p>
+                        <p>+27 434 344 432</p>
+                        <p>info@bonhotels.com</p>
+                    </div>
+                </div>
+                <nav class="secondary-nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#">Our Hotels</a></li>
+                        <li class="nav-item">
+                            <a href="#">Our Conferencing</a>
+                        </li>
+                        <li class="nav-item"><a href="#">Our Company</a></li>
+                        <li class="nav-item"><a href="#">Hotel Design</a></li>
+                        <li class="nav-item"><a href="#">Careers</a></li>
+                    </ul>
+                </nav>
+                <div class="subsciption">
+                    <div class="fs-500">Subcribe for Offers</div>
+                    <form action="">
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Email"
+                        />
+                        <input type="submit" value="submit" class="btn" />
+                    </form>
+                </div>
+            </div>
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+</html>

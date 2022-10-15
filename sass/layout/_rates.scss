@@ -1,0 +1,57 @@
+#rates {
+    --padding: 2rem;
+    padding-block: var(--padding);
+    h2 {
+        text-align: center;
+    }
+    .rooms {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-top: var(--padding);
+        .room {
+            position: relative;
+            overflow: hidden;
+            min-width: 28rem;
+            height: 23rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            position: relative;
+            @include mqDown(medium) {
+                min-width: 22rem;
+                height: 18rem;
+            }
+            @include mqDown(small) {
+                min-width: 19rem;
+                height: 15rem;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                inset: 0 0 0 0;
+                background: var(--bg-img);
+                background-position: center;
+                background-repeat: no-repeat;
+                filter: brightness(60%);
+            }
+            .room-details {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 5%;
+                padding: 1rem;
+
+                h2 {
+                    font-size: var(--fs-600);
+                    @include mqDown(medium) {
+                        font-size: var(--fs-500);
+                    }
+                }
+                & > * + * {
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+}

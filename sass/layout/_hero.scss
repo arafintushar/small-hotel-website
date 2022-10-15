@@ -1,0 +1,17 @@
+#hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("../img/hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 31.25rem;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    h1 {
+        text-transform: uppercase;
+    }
+    p {
+        text-transform: capitalize;
+        margin-bottom: 1rem;
+    }
+}

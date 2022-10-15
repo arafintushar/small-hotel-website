@@ -1,0 +1,16 @@
+.btn {
+    color: var(--clr-neutral-100);
+    background-color: var(--clr-primary-500);
+    border: none;
+    padding: 0.5em 5em;
+    border-radius: 0.4em;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: color 0.25s linear;
+    &:hover {
+        background-color: var(--clr-primary-400);
+    }
+    @include mqDown(small) {
+        padding: 0.5em 4em;
+    }
+}

@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+    --ff-primary: "Ubuntu", sans-serif;
+    --ff-secondary: "Poppins", sans-serif;
+
+    //colors
+    @each $item, $color in $colors {
+        @each $shade, $value in $color {
+            --clr-#{$item}-#{$shade}: #{$value};
+        }
+    }
+
+    @each $weight, $num in $fontWeights {
+        --fw-#{$weight}: #{$num};
+    }
+
+    //font sizes
+    @each $num, $size in $fontSizes {
+        --fs-#{$num}: #{$size};
+    }
+
+    --fs-body: var(--fs-300);
+    --fs-primary-heading: var(--fs-700);
+    --fs-secondary-heading: var(--fs-600);
+    --fs-tertiary-heading: var(--fs-500);
+
+    @include mqUp(small) {
+        --fs-body: var(--fs-400);
+        --fs-primary-heading: var(--fs-800);
+    }
+
+    @include mqUp(medium) {
+        --fs-primary-heading: var(--fs-900);
+    }
+}
+
+body {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-400);
+}

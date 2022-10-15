@@ -1,0 +1,65 @@
+#footer {
+    --padding: 2rem;
+    padding-block: var(--padding);
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        @include mqDown(small) {
+            grid-template-columns: 1fr;
+        }
+        .address {
+            @include mqDown(small) {
+                display: flex;
+                justify-content: space-between;
+            }
+            .logo {
+                width: 9.375rem;
+                margin-bottom: var(--padding);
+                @include mqDown(small) {
+                    width: 6.25rem;
+                }
+            }
+        }
+        .secondary-nav {
+            .nav-list {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                @include mqDown(small) {
+                    flex-direction: row;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                }
+                .nav-item {
+                    list-style-type: none;
+                    a {
+                        color: var(--clr-neutral-100);
+                        text-decoration: none;
+                        &:hover {
+                            color: var(--clr-neutral-300);
+                        }
+                    }
+                }
+            }
+        }
+        .subsciption {
+            form {
+                margin-top: 1rem;
+                input[type="email"] {
+                    width: 100%;
+                    margin-bottom: 1rem;
+                    padding: 0.5rem 1rem;
+                    border-radius: 0.4rem;
+                    border: none;
+                    &:focus {
+                        outline: 2px solid var(--clr-primary-400);
+                    }
+                }
+                input[type="submit"] {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

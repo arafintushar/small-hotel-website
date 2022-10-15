@@ -1,0 +1,19 @@
+@mixin mqUp($breakpoint) {
+    $size: map-get(
+        $map: $breakpoints,
+        $key: $breakpoint,
+    );
+    @media (min-width: $size) {
+        @content;
+    }
+}
+
+@mixin mqDown($breakpoint) {
+    $size: map-get(
+        $map: $breakpoints,
+        $key: $breakpoint,
+    );
+    @media (max-width: $size) {
+        @content;
+    }
+}

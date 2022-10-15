@@ -1,0 +1,10 @@
+#book {
+    --padding: 2rem;
+    padding-block: var(--padding);
+    text-align: center;
+    .container {
+        > * + * {
+            margin-top: 1rem;
+        }
+    }
+}

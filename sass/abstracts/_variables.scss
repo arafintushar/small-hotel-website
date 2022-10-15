@@ -1,0 +1,48 @@
+$breakpoints: (
+    small: pxTorem(720),
+    medium: pxTorem(992),
+    large: pxTorem(1200),
+    x-large: pxTorem(1400),
+);
+
+$fontWeights: (
+    regular: 400,
+    semi-bold: 500,
+    bold: 700,
+);
+
+$colors: (
+    primary: (
+        100: hsl(36, 67%, 92%),
+        200: hsl(36, 67%, 82%),
+        300: hsl(36, 67%, 72%),
+        400: hsl(36, 67%, 62%),
+        500: hsl(36, 67%, 52%),
+        600: hsl(36, 67%, 42%),
+        700: hsl(36, 67%, 32%),
+        800: hsl(36, 67%, 22%),
+        900: hsl(36, 67%, 12%),
+    ),
+    neutral: (
+        100: hsl(0 0% 100%),
+        200: hsl(0 0% 90%),
+        300: hsl(0 0% 80%),
+        400: hsl(0 0% 70%),
+        500: hsl(0 0% 60%),
+        600: hsl(0 0% 40%),
+        700: hsl(0 0% 20%),
+        800: hsl(0 0% 7%),
+        900: hsl(0 0% 0%),
+    ),
+);
+
+$fontSizes: (
+    200: pxTorem(14),
+    300: pxTorem(16),
+    400: pxTorem(18),
+    500: pxTorem(24),
+    600: pxTorem(32),
+    700: pxTorem(40),
+    800: pxTorem(48),
+    900: pxTorem(56),
+);
